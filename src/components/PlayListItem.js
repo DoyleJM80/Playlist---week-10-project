@@ -6,7 +6,7 @@ export default class PlayListItem extends Component {
   }
   render() {
     return(
-      <div className="ind-song">
+      <div className="ind-song card">
         <h3>User: {this.props.song.userName}</h3>
         <h3>Artist/Band: {this.props.song.songArtist}</h3>
         <h3>Title: {this.props.song.songTitle}</h3>

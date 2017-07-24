@@ -27,7 +27,7 @@ export default class PlayListForm extends Component {
     let listItem = JSON.stringify(this.state);
     console.log('list item', listItem);
 
-      fetch("https://tiny-lasagna-server.herokuapp.com/collections/playlisting", {
+      fetch("https://tiny-lasagna-server.herokuapp.com/collections/playlistingDoyle", {
         method: "POST",
         body: listItem,
         headers: {

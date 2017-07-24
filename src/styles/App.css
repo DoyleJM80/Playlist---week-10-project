@@ -30,3 +30,7 @@ body {
 .ind-song {
   background-color: rgb(109, 187, 232);
 }
+
+.float-right {
+  float: right;
+}
