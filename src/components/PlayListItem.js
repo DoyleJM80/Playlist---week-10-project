@@ -6,11 +6,11 @@ export default class PlayListItem extends Component {
   }
   render() {
     return(
-      <div className="ind-song card">
-        <h3>User: {this.props.song.userName}</h3>
-        <h3>Artist/Band: {this.props.song.songArtist}</h3>
-        <h3>Title: {this.props.song.songTitle}</h3>
-        <h3>Notes: {this.props.song.songNotes}</h3>
+      <div className="ind-song card-block text-left song-container">
+        <h3><span>User: </span>{this.props.song.userName}</h3>
+        <h3><span>Artist/Band: </span>{this.props.song.songArtist}</h3>
+        <h3><span>Title: </span>{this.props.song.songTitle}</h3>
+        <h3><span>Notes: </span>{this.props.song.songNotes}</h3>
       </div>
     )
   }

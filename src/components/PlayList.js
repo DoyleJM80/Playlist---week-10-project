@@ -35,9 +35,13 @@ export default class PlayList extends Component {
       return <PlayListItem key={index} song={song} /> // this.props.song
     })
     return(
-      <div className="col-md-6 float-right">
-        <button value="Update List" onClick={this.fetchData}>Update List</button>
-        {songs}
+      <div className="col-md-6 float-right block">
+        <div className="button-container">
+          <button className="btn btn-success button" value="Update List" onClick={this.fetchData}>Update List</button>
+        </div>
+        <div className="song-container">
+          {songs}
+        </div>
       </div>
     )
   }

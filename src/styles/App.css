@@ -29,8 +29,70 @@ body {
 
 .ind-song {
   background-color: rgb(109, 187, 232);
+  padding-left: 50px;
 }
 
 .float-right {
   float: right;
+}
+
+.input {
+  width: 90%;
+}
+
+label {
+  float: left;
+  margin-left: 5%;
+  color: white;
+  margin-top: 1%;
+}
+
+.float-left {
+  float: left;
+  margin-left: 5%;
+}
+
+.button-left {
+  float:left;
+  margin-bottom: 20px;
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.block {
+  display: inline-block;
+}
+
+.button-container {
+  margin-bottom: 3%;
+}
+
+.song-container {
+  margin-bottom: 4%;
+}
+
+.button {
+  margin-right: 600px;
+  margin-top: 20px;
+}
+
+.banner {
+  height: 70px;
+  background-color: rgb(0, 130, 207);
+  padding-top: 10px;
+  color: white;
+}
+
+.banner h1 {
+  margin-right: 700px;
+}
+
+span {
+  color: white;
 }

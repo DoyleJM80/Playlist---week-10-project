@@ -65,12 +65,16 @@ export default class PlayListForm extends Component {
 
   render() {
     return(
-      <form className="col-md-6" onSubmit={this.addToList}>
-        <input type="text" placeholder="Name or User Name" onChange={this.handleInput} name='userName'value={this.state.userName}/>
-        <input type="text" placeholder="Artist or Band Name" onChange={this.handleInput} name='songArtist' value={this.state.songArtist} />
-        <input type="text" placeholder="Song Title" onChange={this.handleInput} name='songTitle' value={this.state.songTitle} />
-        <textarea placeholder="notes" onChange={this.handleInput} name='songNotes' value={this.state.songNotes} />
-        <input type="submit" />
+      <form className="col-md-6 block" onSubmit={this.addToList}>
+        <label className="white-text">User Name:</label>
+        <input className="input" type="text" placeholder="Name or User Name" onChange={this.handleInput} name='userName'value={this.state.userName}/>
+        <label className="white-text">Artist/Band:</label>
+        <input className="input" type="text" placeholder="Artist or Band Name" onChange={this.handleInput} name='songArtist' value={this.state.songArtist} />
+        <label className="white-text">Song Title:</label>
+        <input className="input" type="text" placeholder="Song Title" onChange={this.handleInput} name='songTitle' value={this.state.songTitle} />
+        <label className="white-text">Notes about Song:</label>
+        <textarea className="input" placeholder="notes" onChange={this.handleInput} name='songNotes' value={this.state.songNotes} />
+        <input className="btn btn-primary float-left" type="submit" />
       </form>
     )
   }
